@@ -1,7 +1,5 @@
 # Mi Proyecto
 
-Este proyecto muestra ejemplos de escenarios de Gherkin y cómo ejecutarlos utilizando Cucumber.
-
 ## Escenarios de Gherkin
 
 ```gherkin
