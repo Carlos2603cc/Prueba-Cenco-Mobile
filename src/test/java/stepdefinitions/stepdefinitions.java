@@ -9,7 +9,7 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import questions.userAssert;
 
-public class Steps {
+public class stepdefinitions {
 
 
     private  int id_poema;
