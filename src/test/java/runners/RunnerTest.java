@@ -8,7 +8,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features/Escenarios.feature",
-        glue = "src/test/stepdefinitions",
+        glue = "stepdefinitions",
         tags = "",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )

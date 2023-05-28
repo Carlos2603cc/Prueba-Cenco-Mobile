@@ -27,5 +27,5 @@ Característica: Realizar a los diversos metodos de la
 ```
 
 ```Bash
-./gradlew test
+gradle test
 ```
