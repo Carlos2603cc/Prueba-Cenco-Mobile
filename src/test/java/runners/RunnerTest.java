@@ -9,8 +9,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @CucumberOptions(
         features = "src/test/resources/features/Escenarios.feature",
         glue = "stepdefinitions",
-        tags = "",
-        snippets = CucumberOptions.SnippetType.CAMELCASE
+        tags = ""
 )
 public class RunnerTest {
 }

@@ -1,23 +1,17 @@
 # language: es
 
-@TestJSONPlaceholder
-Característica:
+Característica: Validar el correcto funsionamiento del proseso de login de la aplicacion Conduit
 
-  @Obtencion_de_recursos_literarios
-  Escenario: Obtencion de recursos literarios
-    Dado que existe un poema en la base de datos
-    Cuando se realiza una solicitud GET a posts con idPoema
-    Entonces se obtiene una respuesta con el poema deseado
 
-  @Editar_artículos_literarios
-  Escenario: Editar artículos literarios
-    Dado que existen correcciones a realizar a un poema
-    Cuando se realiza una solicitud PUT a posts con idPoema
-    Entonces se obtene una respuesta exitosa y el Poema se actualiza correctamente
+  Escenario:Realizar login con credenciales validas
+    Dado  obteniene credenciales validas abre la aplicacion
+    Cuando intenta realizar Login con datos validos
+    Entonces realiza login exitozamente
 
-  @Agregar_artículos_literarios
-  Escenario: Agregar artículos literarios
-    Dado que se tiene los datos de un Pema nuevo
-    Cuando se realiza una solicitud POST a posts
-    Entonces se obtiene una respuesta exitosa y el Poema se crea correctamente
+
+  Escenario:Realizar login con credenciales invalidas
+    Dado obtiene credenciales invalidas
+    Cuando intenta realizar Login con datos invalidos
+    Entonces no puede acceder a la aplicacion
+
 
