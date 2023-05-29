@@ -27,8 +27,16 @@ Entonces no puede acceder a la aplicacion
 
 
 ```
-
+Regresion
 ```Bash
-gradle clean test aggregate
+gradle clean test -D tags="@Regresion_Conduit_app"
+```
+Test
+```Bash
+gradle clean test -D tags="@Test_login_exitoso"
+```
+Test
+```Bash
+gradle clean test -D tags="@Test_login_fallido"
 ```
 
