@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Validar el correcto funsionamiento del proseso de login de la aplicacion Conduit","Realizar login con credenciales validas","ERROR","2023-05-28T21:15:41.686262-03:00[America/Argentina/Buenos_Aires]","0.0","41.05"
-"Validar el correcto funsionamiento del proseso de login de la aplicacion Conduit","Realizar login con credenciales invalidas","ERROR","2023-05-28T21:16:22.793723-03:00[America/Argentina/Buenos_Aires]","0.0","35.48"
