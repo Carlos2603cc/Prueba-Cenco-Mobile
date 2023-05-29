@@ -29,6 +29,6 @@ Entonces no puede acceder a la aplicacion
 ```
 
 ```Bash
-gradle clean test
+gradle clean test aggregate
 ```
 

@@ -19,8 +19,8 @@ public class Steps {
     public String password;
 
 
-    @Dado("obteniene credenciales validas abre la aplicacion")
-    public void  obteniene_credenciales_validas_abre_la_aplicacion() throws MalformedURLException {
+    @Dado("obtiene credenciales validas abre la aplicacion")
+    public void  obtiene_credenciales_validas_abre_la_aplicacion() throws MalformedURLException {
         hisMobileDevise = setSession.startSession();
         user = "prueba@accenture.com";
         password = "123456";
