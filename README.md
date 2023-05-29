@@ -5,6 +5,7 @@
 ##### ° Debe apuntar Appium ya sea a el emulado de android estudio.
 ##### ° debe tener instalado Coduit en el dispositivo en el cual se realizaran las pruebas.
 ##### ° Se debe iniciar las pruebas en la pantalla de Home des dispositivo y con la app cerrada.
+##### ° Tener instalado gradle en el equipo que ejecutara los test.
 
 ## Escenarios de Gherkin
 
@@ -28,11 +29,6 @@ Entonces no puede acceder a la aplicacion
 ```
 
 ```Bash
-gradlew clean test
+gradle clean test
 ```
-```Bash
-gradle clean test -Dcucumber.filter.tags="@Test_login_exitoso"
-```
-```Bash
-gradle clean test -Dcucumber.filter.tags="@Test_login_fallido"
-```
+
