@@ -26,8 +26,8 @@ public class Steps {
         password = "123456";
     }
 
-    @Cuando("intenta realizar Login con datos validos")
-    public void intenta_realizar_Login_con_datos_validos(){
+    @Cuando("intenta realizar Login")
+    public void intenta_realizar_Login(){
         navigateTo.LoginPage(hisMobileDevise);
         login.tryLogin(hisMobileDevise, user, password);
     }
@@ -36,7 +36,26 @@ public class Steps {
     public void realiza_login_exitozamente(){
         userAssert.loginSuccessful(hisMobileDevise);
         logOut.try_logOut(hisMobileDevise);
+        Android.app_switch(hisMobileDevise);
+        Android.scroll_up(hisMobileDevise);
         Android.navigateToHome(hisMobileDevise);
+        hisMobileDevise.quit();
+    }
+
+    @Dado("obtiene credenciales invalidas")
+    public void obtiene_credenciales_invalidas() throws MalformedURLException {
+        hisMobileDevise = setSession.startSession();
+        user = "fallo@mail.com";
+        password = "789456";
+    }
+
+    @Entonces("no puede acceder a la aplicacion")
+    public void no_puede_acceder_a_la_aplicacion(){
+        userAssert.loginFailed(hisMobileDevise);
+        Android.app_switch(hisMobileDevise);
+        Android.scroll_up(hisMobileDevise);
+        Android.navigateToHome(hisMobileDevise);
+        hisMobileDevise.quit();
     }
 
 

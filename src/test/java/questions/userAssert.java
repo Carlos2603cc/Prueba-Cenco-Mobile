@@ -39,5 +39,16 @@ public class userAssert {
         Assert.assertNotNull(my_article_button);
     }
 
+    public static void loginFailed(AndroidDriver driver){
+        WebDriverWait wait = tasks.wait.waitElemet(driver);
+        WebElement pop_up_error_login = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(loginScreen.pop_up_error_login_xpath)));
+        WebElement close_button_pop_up = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(loginScreen.close_button_pop_up_xpat)));
+        close_button_pop_up.click();
+        WebElement Error_login = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(loginScreen.Error_login_xpath)));
+        Assert.assertNotNull(pop_up_error_login);
+        Assert.assertNotNull(close_button_pop_up);
+        Assert.assertNotNull(Error_login);
+    }
+
 
 }
